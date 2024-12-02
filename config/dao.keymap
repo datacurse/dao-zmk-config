@@ -15,9 +15,16 @@
 
 &lt { quick_tap_ms = <200>; };
 
-&mt { quick_tap_ms = <200>; };
+flavor = "balanced";
+         hold-while-undecided;
+         hold-while-undecided-linger;
+         tapping-term-ms = <180>;
 
-/ {
+quick-tap-ms {
+    = <350>;};
+
+/
+
     chosen {
         zmk,matrix_transform = &default_transform;
 
@@ -31,19 +38,19 @@
 
         Base {
             bindings = <
-&trans  &kp Q        &kp W            &kp F           &kp P        &kp B      &kp J            &kp L              &kp U             &kp Y            &kp SEMICOLON  &trans
-&trans  &mt LCTRL A  &mt RIGHT_WIN R  &mt LEFT_ALT S  &mt LSHFT T  &kp G      &kp M            &mt RIGHT_SHIFT N  &mt RIGHT_ALT E   &mt RIGHT_WIN I  &mt RCTRL O    &trans
-&trans  &kp Z        &kp X            &kp C           &kp D        &kp V      &kp K            &kp H              &kp COMMA         &kp DOT          &kp FSLH       &trans
-                                      &kp ESCAPE      &lt 2 ENTER  &lt 1 TAB  &lt 4 BACKSPACE  &lt 3 SPACE        &kp SINGLE_QUOTE
+&trans  &kp Q        &kp W            &kp F           &kp P        &kp B      &kp J        &kp L              &kp U             &kp Y            &kp SEMICOLON  &trans
+&trans  &mt LCTRL A  &mt RIGHT_WIN R  &mt LEFT_ALT S  &mt LSHFT T  &kp G      &kp M        &mt RIGHT_SHIFT N  &mt RIGHT_ALT E   &mt RIGHT_WIN I  &mt RCTRL O    &trans
+&trans  &kp Z        &kp X            &kp C           &kp D        &kp V      &kp K        &kp H              &kp COMMA         &kp DOT          &kp FSLH       &trans
+                                      &kp ESCAPE      &lt 2 SPACE  &lt 1 TAB  &lt 4 ENTER  &lt 3 BACKSPACE    &kp SINGLE_QUOTE
             >;
         };
 
         Fn_Num {
             bindings = <
-&trans  &kp F12  &kp F7  &kp F8      &kp F9       &trans     &kp ASTRK        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS  &trans
-&trans  &kp F11  &kp F4  &kp F5      &kp F6       &trans     &kp SLASH        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS   &trans
-&trans  &kp F10  &kp F1  &kp F2      &kp F3       &trans     &kp EQUAL        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0     &trans
-                         &kp ESCAPE  &lt 2 ENTER  &lt 1 TAB  &lt 4 BACKSPACE  &lt 3 SPACE   &kp DOT
+&trans  &kp F12  &kp F7  &kp F8      &kp F9       &trans     &kp ASTRK    &kp NUMBER_7     &kp NUMBER_8  &kp NUMBER_9  &kp MINUS  &trans
+&trans  &kp F11  &kp F4  &kp F5      &kp F6       &trans     &kp SLASH    &kp NUMBER_4     &kp NUMBER_5  &kp NUMBER_6  &kp PLUS   &trans
+&trans  &kp F10  &kp F1  &kp F2      &kp F3       &trans     &kp EQUAL    &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp N0     &trans
+                         &kp ESCAPE  &lt 2 SPACE  &lt 1 TAB  &lt 4 ENTER  &lt 3 BACKSPACE  &kp DOT
             >;
         };
 
@@ -52,16 +59,16 @@
 &trans  &kp EXCL   &kp AT            &kp HASH         &kp DOLLAR            &kp PERCENT    &kp CARET         &kp AMPS               &kp ASTRK         &kp TILDE          &kp EQUAL      &trans
 &trans  &kp MINUS  &kp LEFT_BRACKET  &kp LEFT_BRACE   &kp LEFT_PARENTHESIS  &kp LESS_THAN  &kp GREATER_THAN  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE   &kp RIGHT_BRACKET  &kp PLUS       &trans
 &trans  &kp CLCK   &kp GRAVE         &kp LS(LC(TAB))  &trans                &trans         &trans            &trans                 &kp RC(TAB)       &trans             &kp BACKSLASH  &trans
-                                     &kp ESCAPE       &lt 2 ENTER           &lt 1 TAB      &lt 4 BACKSPACE   &lt 3 SPACE            &kp SINGLE_QUOTE
+                                     &kp ESCAPE       &lt 2 SPACE           &lt 1 TAB      &lt 4 ENTER       &lt 3 BACKSPACE        &kp SINGLE_QUOTE
             >;
         };
 
         Mouse_Nav {
             bindings = <
-&trans  &trans  &trans  &trans      &trans       &trans     &kp C_VOL_UP     &kp HOME     &kp PSCRN         &kp PG_UP  &kp SLCK         &trans
-&trans  &trans  &trans  &trans      &trans       &trans     &kp C_MUTE       &kp LEFT     &kp UP            &kp RIGHT  &kp INS          &trans
-&trans  &trans  &trans  &trans      &trans       &trans     &kp C_VOL_DN     &kp END      &kp DOWN          &kp PG_DN  &kp PAUSE_BREAK  &trans
-                        &kp ESCAPE  &lt 2 ENTER  &lt 1 TAB  &lt 4 BACKSPACE  &lt 3 SPACE  &kp SINGLE_QUOTE
+&trans  &trans  &trans  &trans      &trans       &trans     &kp C_VOL_UP  &kp HOME         &kp PSCRN         &kp PG_UP  &kp SLCK         &trans
+&trans  &trans  &trans  &trans      &trans       &trans     &kp C_MUTE    &kp LEFT         &kp UP            &kp RIGHT  &kp INS          &trans
+&trans  &trans  &trans  &trans      &trans       &trans     &kp C_VOL_DN  &kp END          &kp DOWN          &kp PG_DN  &kp PAUSE_BREAK  &trans
+                        &kp ESCAPE  &lt 2 SPACE  &lt 1 TAB  &lt 4 ENTER   &lt 3 BACKSPACE  &kp SINGLE_QUOTE
             >;
         };
 
