@@ -19,10 +19,11 @@
             quick-tap-ms = <150>;
             require-prior-idle-ms = <100>;
             bindings = <&kp>, <&kp>;
+
             hold-trigger-key-positions = <6 7 8 9 10 11>;    // Right-hand keys
             hold-trigger-on-release;
         };
-        
+
         hm_r: homerow_mods_right {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -31,6 +32,7 @@
             quick-tap-ms = <150>;
             require-prior-idle-ms = <100>;
             bindings = <&kp>, <&kp>;
+
             hold-trigger-key-positions = <0 1 2 3 4 5>;    // Left-hand keys
             hold-trigger-on-release;
         };
@@ -41,10 +43,10 @@
 
         Base {
             bindings = <
-&trans  &kp Q        &kp W            &kp F           &kp P        &kp B      &kp J        &kp L              &kp U             &kp Y            &kp SEMICOLON  &trans
-&trans  &hm LGUI A   &hm LCTRL R      &hm LALT S      &hm LSHFT T  &kp G      &kp M        &hm_r RSHFT N     &hm_r RALT E      &hm_r RCTRL I   &hm_r RGUI O   &trans
-&trans  &kp Z        &kp X            &kp C           &kp D        &kp V      &kp K        &kp H              &kp COMMA         &kp DOT          &kp FSLH       &trans
-                                      &kp ESCAPE      &lt 2 SPACE  &lt 1 TAB  &lt 4 ENTER  &lt 3 BACKSPACE    &kp SINGLE_QUOTE
+&trans  &kp Q        &kp W               &kp F       &kp P        &kp B      &kp J        &kp L            &kp U             &kp Y              &kp SEMICOLON  &trans
+&trans  &hm LCTRL A  &hm LCTRL LEFT_WIN  &hm LALT S  &hm LSHFT T  &kp G      &kp M        &hm_r RSHFT N    &hm_r RALT E      &hm_r RIGHT_WIN I  &hm_r RCTRL O  &trans
+&trans  &kp Z        &kp X               &kp C       &kp D        &kp V      &kp K        &kp H            &kp COMMA         &kp DOT            &kp FSLH       &trans
+                                         &kp ESCAPE  &lt 2 SPACE  &lt 1 TAB  &lt 4 ENTER  &lt 3 BACKSPACE  &kp SINGLE_QUOTE
             >;
         };
 
