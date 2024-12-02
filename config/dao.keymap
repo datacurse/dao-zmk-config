@@ -31,19 +31,37 @@
 
         default_layer {
             bindings = <
-&mt LGUI RBKT    &kp Q  &kp W  &kp F        &kp P            &kp G        &kp J        &kp L           &kp U        &kp Y    &kp P     &kp LBKT
-&mt LCTRL GRAVE  &kp A  &kp R  &kp S        &kp T            &kp D        &kp H        &kp N           &kp E        &kp I    &kp O     &mt RCTRL SQT
-&mt LALT MINUS   &kp Z  &kp X  &kp C        &kp V            &kp B        &kp K        &kp M           &kp COMMA    &kp DOT  &kp FSLH  &mt RALT BSLH
-                               &lt RSE TAB  &mt LSHFT SPACE  &lt LWR RET  &lt LWR ESC  &mt RSHFT BSPC  &lt RSE DEL
+&trans  &kp Q        &kp W            &kp F           &kp P            &kp B      &kp J      &kp L              &kp U             &kp Y            &kp SEMICOLON  &trans
+&trans  &mt LCTRL A  &mt RIGHT_WIN R  &mt LEFT_ALT S  &mt LSHFT T      &kp G      &kp M      &mt RIGHT_SHIFT N  &mt RIGHT_ALT E   &mt RIGHT_WIN I  &mt RCTRL O    &trans
+&trans  &kp Z        &kp X            &kp C           &kp D            &kp V      &kp K      &kp H              &kp COMMA         &kp DOT          &kp FSLH       &trans
+                                      &kp DEL         &mt LSHFT SPACE  &lt 1 RET  &lt 1 ESC  &mt RSHFT BSPC     &kp SINGLE_QUOTE
             >;
         };
 
-        lower_layer {
+        Nav {
             bindings = <
 &mt LGUI F1     &kp NUMBER_1     &kp NUMBER_2   &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6          &kp NUMBER_7           &kp NUMBER_8      &kp NUMBER_9       &kp NUMBER_0   &kp PIPE
-&mt LCTRL PLUS  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH      &kp DOLLAR    &kp PRCNT     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp SEMICOLON  &mt RCTRL MINUS
+&mt LCTRL PLUS  &kp EXCLAMATION  &kp ASTRK      &kp PLUS      &kp MINUS     &kp CARET     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp SEMICOLON  &mt RCTRL MINUS
 &mt LALT EQUAL  &kp CARET        &kp AMPERSAND  &kp ASTERISK  &kp PLUS      &kp MINUS     &kp LESS_THAN         &kp GREATER_THAN       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp QUESTION   &kp BACKSLASH
-                                                &lt ADJ TAB   &trans        &trans        &trans                &trans                 &lt ADJ DEL
+                                                &lt 5 TAB     &trans        &trans        &trans                &trans                 &lt 5 DEL
+            >;
+        };
+
+        Fn {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        Sym {
+            bindings = <
+&trans  &kp EXCL   &kp AT            &kp HASH        &kp DOLLAR            &kp PERCENT    &kp CARET         &kp AMPS               &kp ASTRK        &kp TILDE          &kp EQUAL      &trans
+&trans  &kp MINUS  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp LESS_THAN  &kp GREATER_THAN  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp PLUS       &trans
+&trans  &kp CLCK   &kp GRAVE         &trans          &trans                &trans         &trans            &trans                 &trans           &trans             &kp BACKSLASH  &trans
+                                     &kp DEL         &kp ENTER             &kp TAB        &trans            &trans                 &trans
             >;
         };
 
@@ -52,7 +70,7 @@
 &mt LGUI KP_NUM  &kp KP_SLASH     &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS  &kp C_VOL_UP  &kp HOME  &kp PSCRN  &kp PG_UP  &kp SLCK         &kp CLCK
 &mt LCTRL EQUAL  &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS   &kp C_MUTE    &kp LEFT  &kp UP     &kp RIGHT  &kp INS          &mt RCTRL K_APP
 &kp LALT         &kp KP_N0        &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DOT    &kp C_VOL_DN  &kp END   &kp DOWN   &kp PG_DN  &kp PAUSE_BREAK  &kp RALT
-                                             &trans     &trans     &lt ADJ RET   &lt ADJ ESC   &trans    &trans
+                                             &trans     &trans     &lt 5 RET     &lt 5 ESC     &trans    &trans
             >;
         };
 
