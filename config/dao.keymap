@@ -13,18 +13,9 @@
 #define RSE 2
 #define ADJ 3
 
-&lt { 
-    quick_tap_ms = <200>;
-};
+&lt { quick_tap_ms = <200>; };
 
-&mt {
-    flavor = "hold-preferred";
-    tapping-term-ms = <300>;
-    quick-tap-ms = <350>;
-    hold-while-undecided;
-    hold-while-undecided-linger;
-    require-prior-idle-ms = <100>;
-};
+&mt { tapping-term-ms = <400>; };
 
 / {
     chosen {
