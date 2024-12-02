@@ -29,43 +29,34 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        Base {
             bindings = <
-&trans  &kp Q        &kp W            &kp F           &kp P            &kp B      &kp J      &kp L              &kp U             &kp Y            &kp SEMICOLON  &trans
-&trans  &mt LCTRL A  &mt RIGHT_WIN R  &mt LEFT_ALT S  &mt LSHFT T      &kp G      &kp M      &mt RIGHT_SHIFT N  &mt RIGHT_ALT E   &mt RIGHT_WIN I  &mt RCTRL O    &trans
-&trans  &kp Z        &kp X            &kp C           &kp D            &kp V      &kp K      &kp H              &kp COMMA         &kp DOT          &kp FSLH       &trans
-                                      &kp DEL         &mt LSHFT SPACE  &lt 1 RET  &lt 1 ESC  &mt RSHFT BSPC     &kp SINGLE_QUOTE
+&trans  &kp Q        &kp W            &kp F           &kp P        &kp B      &kp J            &kp L              &kp U             &kp Y            &kp SEMICOLON  &trans
+&trans  &mt LCTRL A  &mt RIGHT_WIN R  &mt LEFT_ALT S  &mt LSHFT T  &kp G      &kp M            &mt RIGHT_SHIFT N  &mt RIGHT_ALT E   &mt RIGHT_WIN I  &mt RCTRL O    &trans
+&trans  &kp Z        &kp X            &kp C           &kp D        &kp V      &kp K            &kp H              &kp COMMA         &kp DOT          &kp FSLH       &trans
+                                      &kp ESCAPE      &lt 2 ENTER  &lt 1 TAB  &lt 4 BACKSPACE  &lt 3 SPACE        &kp SINGLE_QUOTE
             >;
         };
 
-        Nav {
+        Fn_Num {
             bindings = <
-&mt LGUI F1     &kp NUMBER_1     &kp NUMBER_2   &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6          &kp NUMBER_7           &kp NUMBER_8      &kp NUMBER_9       &kp NUMBER_0   &kp PIPE
-&mt LCTRL PLUS  &kp EXCLAMATION  &kp ASTRK      &kp PLUS      &kp MINUS     &kp CARET     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp SEMICOLON  &mt RCTRL MINUS
-&mt LALT EQUAL  &kp CARET        &kp AMPERSAND  &kp ASTERISK  &kp PLUS      &kp MINUS     &kp LESS_THAN         &kp GREATER_THAN       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp QUESTION   &kp BACKSLASH
-                                                &lt 5 TAB     &trans        &trans        &trans                &trans                 &lt 5 DEL
-            >;
-        };
-
-        Fn {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp F12  &kp F7  &kp F8      &kp F9       &trans     &kp ASTRK        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS  &trans
+&trans  &kp F11  &kp F4  &kp F5      &kp F6       &trans     &kp SLASH        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS   &trans
+&trans  &kp F10  &kp F1  &kp F2      &kp F3       &trans     &kp EQUAL        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0     &trans
+                         &kp ESCAPE  &lt 2 ENTER  &lt 1 TAB  &lt 4 BACKSPACE  &lt 3 SPACE   &kp DOT
             >;
         };
 
         Sym {
             bindings = <
-&trans  &kp EXCL   &kp AT            &kp HASH        &kp DOLLAR            &kp PERCENT    &kp CARET         &kp AMPS               &kp ASTRK        &kp TILDE          &kp EQUAL      &trans
-&trans  &kp MINUS  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp LESS_THAN  &kp GREATER_THAN  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp PLUS       &trans
-&trans  &kp CLCK   &kp GRAVE         &trans          &trans                &trans         &trans            &trans                 &trans           &trans             &kp BACKSLASH  &trans
-                                     &kp DEL         &kp ENTER             &kp TAB        &trans            &trans                 &trans
+&trans  &kp EXCL   &kp AT            &kp HASH         &kp DOLLAR            &kp PERCENT    &kp CARET         &kp AMPS               &kp ASTRK         &kp TILDE          &kp EQUAL      &trans
+&trans  &kp MINUS  &kp LEFT_BRACKET  &kp LEFT_BRACE   &kp LEFT_PARENTHESIS  &kp LESS_THAN  &kp GREATER_THAN  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE   &kp RIGHT_BRACKET  &kp PLUS       &trans
+&trans  &kp CLCK   &kp GRAVE         &kp LS(LC(TAB))  &trans                &trans         &trans            &trans                 &kp RC(TAB)       &trans             &kp BACKSLASH  &trans
+                                     &kp ESCAPE       &lt 2 ENTER           &lt 1 TAB      &lt 4 BACKSPACE   &lt 3 SPACE            &kp SINGLE_QUOTE
             >;
         };
 
-        raise_layer {
+        Mouse_Nav {
             bindings = <
 &mt LGUI KP_NUM  &kp KP_SLASH     &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS  &kp C_VOL_UP  &kp HOME  &kp PSCRN  &kp PG_UP  &kp SLCK         &kp CLCK
 &mt LCTRL EQUAL  &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS   &kp C_MUTE    &kp LEFT  &kp UP     &kp RIGHT  &kp INS          &mt RCTRL K_APP
@@ -74,7 +65,7 @@
             >;
         };
 
-        adjust_layer {
+        Boot {
             bindings = <
 &bootloader  &none         &none         &none         &none         &none         &none         &none         &none         &none         &none         &bootloader
 &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
