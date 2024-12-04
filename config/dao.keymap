@@ -51,8 +51,8 @@
 
         Mouse_Nav {
             bindings = <
-&trans  &trans            &mwh SCROLL_UP  &mmv MOVE_UP    &mwh SCROLL_DOWN  &trans             &trans           &kp PG_UP                  &kp PSCRN     &kp PAGE_DOWN  &kp SLCK     &trans
-&trans  &mwh SCROLL_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT   &mwh SCROLL_RIGHT  &kp LS(LC(TAB))  &kp LEFT                   &kp UP        &kp RIGHT      &kp RC(TAB)  &trans
+&trans  &trans            &msc SCROLL_UP  &mmv MOVE_UP    &msc SCROLL_DOWN  &trans             &trans           &kp PG_UP                  &kp PSCRN     &kp PAGE_DOWN  &kp SLCK     &trans
+&trans  &msc SCROLL_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT   &msc SCROLL_RIGHT  &kp LS(LC(TAB))  &kp LEFT                   &kp UP        &kp RIGHT      &kp RC(TAB)  &trans
 &trans  &trans            &trans          &trans          &trans            &trans             &trans           &kp HOME                   &kp DOWN      &kp END        &kp INS      &trans
                                           &lt 2 ESC       &mkp LCLK         &mkp RCLK          &lt 3 ENTER      &mt RIGHT_SHIFT BACKSPACE  &lt 4 DELETE
             >;
