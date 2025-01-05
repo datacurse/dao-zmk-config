@@ -72,10 +72,10 @@
 
         Rus {
             bindings = <
-&trans        &kp PERIOD  &kp W  &kp A   &kp G   &kp COMMA  &kp Q   &kp K             &kp E   &kp Z              &kp GRAVE  &trans
-&kp SQT       &kp F       &kp H  &kp C   &kp N   &kp U      &kp V   &kp Y             &kp T   &kp B              &kp J      &kp SEMICOLON
-&kp LEFT_ALT  &kp P       &kp X  &kp W   &kp L   &kp D      &kp R   &kp LEFT_BRACKET  &kp M   &kp RIGHT_BRACKET  &kp I      &kp O
-                                 &trans  &trans  &trans     &trans  &trans            &trans
+&trans        &kp PERIOD  &kp W  &kp A   &kp G                 &kp COMMA  &kp Q   &kp K             &kp E   &kp Z              &kp GRAVE  &trans
+&kp SQT       &kp F       &kp H  &kp C   &kp N                 &kp U      &kp V   &kp Y             &kp T   &kp B              &kp J      &kp SEMICOLON
+&kp LEFT_ALT  &kp P       &kp X  &kp W   &kp L                 &kp D      &kp R   &kp LEFT_BRACKET  &kp M   &kp RIGHT_BRACKET  &kp I      &kp O
+                                 &trans  &mt LEFT_SHIFT SPACE  &trans     &trans  &trans            &trans
             >;
         };
 
