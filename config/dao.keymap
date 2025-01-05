@@ -54,10 +54,10 @@
 
         Mouse_Nav {
             bindings = <
-&trans  &trans  &trans  &trans     &trans     &trans     &trans           &kp PG_UP                  &kp PSCRN     &kp PAGE_DOWN  &kp SLCK     &trans
-&trans  &trans  &trans  &trans     &trans     &trans     &kp LS(LC(TAB))  &kp LEFT                   &kp UP        &kp RIGHT      &kp RC(TAB)  &trans
-&trans  &trans  &trans  &trans     &trans     &trans     &trans           &kp HOME                   &kp DOWN      &kp END        &kp INS      &trans
-                        &lt 3 ESC  &mkp LCLK  &mkp RCLK  &lt 2 ENTER      &mt RIGHT_SHIFT BACKSPACE  &lt 5 DELETE
+&trans  &trans           &kp PG_UP      &kp PRINTSCREEN  &kp END    &trans       &trans           &kp PG_UP                  &kp PSCRN     &kp PAGE_DOWN  &kp SLCK     &trans
+&trans  &kp LS(LC(TAB))  &kp LEFT       &kp UP           &kp RIGHT  &kp LC(TAB)  &kp LS(LC(TAB))  &kp LEFT                   &kp UP        &kp RIGHT      &kp RC(TAB)  &trans
+&trans  &trans           &kp PAGE_DOWN  &kp DOWN         &kp HOME   &trans       &trans           &kp HOME                   &kp DOWN      &kp END        &kp INS      &trans
+                                        &lt 3 ESC        &mkp LCLK  &mkp RCLK    &lt 2 ENTER      &mt RIGHT_SHIFT BACKSPACE  &lt 5 DELETE
             >;
         };
 
