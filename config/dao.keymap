@@ -46,10 +46,10 @@
 
         Sym {
             bindings = <
-&kp LEFT_WIN  &kp EXCL       &kp AT            &kp HASH        &kp DOLLAR            &kp PERCENT  &kp CARET      &kp AMPS               &kp ASTRK        &kp TILDE          &kp EQUAL         &trans
-&kp LCTRL     &kp LESS_THAN  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp SLASH    &kp BACKSLASH  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp GREATER_THAN  &kp RIGHT_ALT
-&kp LALT      &kp CLCK       &trans            &trans          &trans                &trans       &trans         &trans                 &trans           &kp PIPE           &kp BACKSLASH     &trans
-                                               &lt 3 ESCAPE    &mt LSHIFT SPACE      &lt 1 TAB    &lt 2 ENTER    &mt RSHIFT BACKSPACE   &lt 5 DELETE
+&kp LEFT_WIN  &kp EXCL       &kp AT            &kp HASH        &kp DOLLAR            &kp PERCENT  &kp CARET    &kp AMPS               &kp ASTRK        &kp TILDE          &kp EQUAL         &trans
+&kp LCTRL     &kp LESS_THAN  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp PLUS     &kp MINUS    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp GREATER_THAN  &kp RIGHT_ALT
+&kp LALT      &kp CLCK       &trans            &trans          &kp EQUAL             &trans       &trans       &kp SLASH              &trans           &kp PIPE           &kp BACKSLASH     &trans
+                                               &lt 3 ESCAPE    &mt LSHIFT SPACE      &lt 1 TAB    &lt 2 ENTER  &mt RSHIFT BACKSPACE   &lt 5 DELETE
             >;
         };
 
