@@ -3,6 +3,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define DEF 0
 #define LWR 1
@@ -38,7 +39,7 @@
             bindings = <
 &kp LEFT_WIN    &kp Q  &kp W  &kp F         &kp P             &kp B      &kp J        &kp L                 &kp U      &kp Y    &kp GRAVE  &trans
 &mt LCTRL APOS  &kp A  &kp R  &kp S         &kp T             &kp G      &kp M        &kp N                 &kp E      &kp I    &kp O      &mt RIGHT_ALT SEMI
-&trans          &kp Z  &kp X  &kp C         &kp D             &kp V      &kp K        &kp H                 &kp COMMA  &kp DOT  &kp FSLH   &trans
+&kp LALT        &kp Z  &kp X  &kp C         &kp D             &kp V      &kp K        &kp H                 &kp COMMA  &kp DOT  &kp FSLH   &trans
                               &lt 3 ESCAPE  &mt LSHIFT SPACE  &lt 1 TAB  &lt 2 ENTER  &mt RSHIFT BACKSPACE  &lt 5 DEL
             >;
         };
@@ -47,7 +48,7 @@
             bindings = <
 &kp LEFT_WIN  &kp EXCL       &kp AT            &kp HASH        &kp DOLLAR            &kp PERCENT  &kp CARET      &kp AMPS               &kp ASTRK        &kp TILDE          &kp EQUAL         &trans
 &kp LCTRL     &kp LESS_THAN  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp SLASH    &kp BACKSLASH  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp GREATER_THAN  &kp RIGHT_ALT
-&trans        &kp CLCK       &trans            &trans          &trans                &trans       &trans         &trans                 &trans           &kp PIPE           &kp BACKSLASH     &trans
+&kp LALT      &kp CLCK       &trans            &trans          &trans                &trans       &trans         &trans                 &trans           &kp PIPE           &kp BACKSLASH     &trans
                                                &lt 3 ESCAPE    &mt LSHIFT SPACE      &lt 1 TAB    &lt 2 ENTER    &mt RSHIFT BACKSPACE   &lt 5 DELETE
             >;
         };
@@ -56,17 +57,17 @@
             bindings = <
 &kp LEFT_WIN  &kp F1   &kp F2   &kp F3        &kp F4            &kp F5           &kp F6       &kp F7                &kp F8     &kp F9        &kp F10    &trans
 &kp LCTRL     &kp N1   &kp N2   &kp NUMBER_3  &kp N4            &kp N5           &kp N6       &kp N7                &kp N8     &kp N9        &kp N0     &mt RALT DOT
-&trans        &kp F11  &kp F12  &kp C_VOL_DN  &kp C_MUTE        &kp C_VOLUME_UP  &kp EQUAL    &kp PLUS              &kp MINUS  &kp ASTERISK  &kp SLASH  &trans
+&kp LALT      &kp F11  &kp F12  &kp C_VOL_DN  &kp C_MUTE        &kp C_VOLUME_UP  &kp EQUAL    &kp PLUS              &kp MINUS  &kp ASTERISK  &kp SLASH  &trans
                                 &lt 3 ESCAPE  &mt LSHIFT SPACE  &lt 1 TAB        &lt 2 ENTER  &mt RSHIFT BACKSPACE  &lt 5 DEL
             >;
         };
 
         Mouse_Nav {
             bindings = <
-&trans  &trans           &kp PG_UP      &kp PRINTSCREEN  &kp END    &trans       &trans           &kp PG_UP                  &kp PSCRN     &kp PAGE_DOWN  &kp SLCK     &trans
-&trans  &kp LS(LC(TAB))  &kp LEFT       &kp UP           &kp RIGHT  &kp LC(TAB)  &kp LS(LC(TAB))  &kp LEFT                   &kp UP        &kp RIGHT      &kp RC(TAB)  &trans
-&trans  &trans           &kp PAGE_DOWN  &kp DOWN         &kp HOME   &trans       &trans           &kp HOME                   &kp DOWN      &kp END        &kp INS      &trans
-                                        &lt 3 ESC        &mkp LCLK  &mkp RCLK    &lt 2 ENTER      &mt RIGHT_SHIFT BACKSPACE  &lt 5 DELETE
+&trans  &trans    &kp PG_UP      &kp PRINTSCREEN  &kp END    &trans       &trans           &kp PG_UP       &kp PSCRN       &kp PAGE_DOWN   &kp SLCK         &trans
+&trans  &kp LEFT  &kp UP         &kp DOWN         &kp RIGHT  &kp LC(TAB)  &kp LS(LC(TAB))  &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
+&trans  &trans    &kp PAGE_DOWN  &kp DOWN         &kp HOME   &trans       &trans           &kp HOME        &mmv MOVE_DOWN  &kp END         &kp INS          &trans
+                                 &lt 3 ESC        &mkp LCLK  &mkp RCLK    &mkp LCLK        &mkp RCLK       &lt 5 DELETE
             >;
         };
 
