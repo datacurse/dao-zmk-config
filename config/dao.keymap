@@ -29,28 +29,19 @@
 
         Base {
             bindings = <
-&kp LEFT_WIN    &kp Q  &kp W  &kp F         &kp P      &kp B             &kp J                 &kp L        &kp U      &kp Y    &kp GRAVE  &trans
-&mt LCTRL APOS  &kp A  &kp R  &kp S         &kp T      &kp G             &kp M                 &kp N        &kp E      &kp I    &kp O      &mt RIGHT_ALT SEMI
-&kp LALT        &kp Z  &kp X  &kp C         &kp D      &kp V             &kp K                 &kp H        &kp COMMA  &kp DOT  &kp FSLH   &trans
-                              &lt 3 ESCAPE  &lt 1 TAB  &mt LSHIFT SPACE  &mt RSHIFT BACKSPACE  &lt 2 ENTER  &lt 4 DEL
+&trans  &kp Q  &kp W  &kp F         &kp P      &kp B             &kp J            &kp L        &kp U      &kp Y    &kp GRAVE  &trans
+&trans  &kp A  &kp R  &kp S         &kp T      &kp G             &kp M            &kp N        &kp E      &kp I    &kp O      &trans
+&trans  &kp Z  &kp X  &kp C         &kp D      &kp V             &kp K            &kp H        &kp COMMA  &kp DOT  &kp FSLH   &trans
+                      &lt 3 ESCAPE  &lt 2 TAB  &mt LSHIFT SPACE  &lt 1 BACKSPACE  &lt 0 ENTER  &kp TAB
             >;
         };
 
         Sym {
             bindings = <
-&kp LEFT_WIN  &kp EXCL       &kp AT            &kp HASH        &kp DOLLAR            &kp PERCENT      &kp CARET             &kp AMPS               &kp ASTRK        &kp TILDE          &kp EQUAL         &trans
-&kp LCTRL     &kp LESS_THAN  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp PLUS         &kp MINUS             &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp GREATER_THAN  &kp RIGHT_ALT
-&kp LALT      &kp CLCK       &trans            &trans          &kp EQUAL             &trans           &trans                &kp SLASH              &trans           &kp PIPE           &kp BACKSLASH     &trans
-                                               &lt 3 ESCAPE    &lt 1 TAB             &mt LSHFT SPACE  &mt RSHIFT BACKSPACE  &lt 2 ENTER            &lt 4 DELETE
-            >;
-        };
-
-        Fn_Num {
-            bindings = <
-&kp LEFT_WIN  &kp F1   &kp F2   &kp F3        &kp F4            &kp F5           &kp F6       &kp F7                &kp F8     &kp F9        &kp F10    &trans
-&kp LCTRL     &kp N1   &kp N2   &kp NUMBER_3  &kp N4            &kp N5           &kp N6       &kp N7                &kp N8     &kp N9        &kp N0     &mt RALT DOT
-&kp LALT      &kp F11  &kp F12  &kp C_VOL_DN  &kp C_MUTE        &kp C_VOLUME_UP  &kp EQUAL    &kp PLUS              &kp MINUS  &kp ASTERISK  &kp SLASH  &trans
-                                &lt 3 ESCAPE  &mt LSHIFT SPACE  &lt 1 TAB        &lt 2 ENTER  &mt RSHIFT BACKSPACE  &lt 4 DEL
+&trans  &trans  &kp N5  &kp N6  &kp N7     &trans           &trans           &trans     &trans            &trans             &trans         &trans
+&trans  &kp N1  &kp N2  &kp N3  &kp N4     &trans           &trans           &kp ENTER  &kp TAB           &kp APOS           &kp SEMI       &trans
+&trans  &trans  &kp N8  &kp N9  &kp N0     &trans           &trans           &trans     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &trans
+                        &trans  &lt 2 TAB  &mt LSHFT SPACE  &lt 1 BACKSPACE  &kp RCTRL  &trans
             >;
         };
 
@@ -59,7 +50,7 @@
 &trans  &trans    &kp PG_UP      &kp PRINTSCREEN  &kp END    &trans       &trans           &kp PG_UP       &kp PSCRN       &kp PAGE_DOWN   &kp SLCK         &trans
 &trans  &kp LEFT  &kp UP         &kp DOWN         &kp RIGHT  &kp LC(TAB)  &kp LS(LC(TAB))  &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
 &trans  &trans    &kp PAGE_DOWN  &kp DOWN         &kp HOME   &trans       &trans           &kp HOME        &mmv MOVE_DOWN  &kp END         &kp INS          &trans
-                                 &lt 3 ESC        &mkp LCLK  &mkp RCLK    &mkp LCLK        &mkp RCLK       &lt 4 DELETE
+                                 &lt 2 ESC        &mkp LCLK  &mkp RCLK    &mkp LCLK        &mkp RCLK       &lt 3 DELETE
             >;
         };
 
