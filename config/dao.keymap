@@ -27,25 +27,25 @@
     keymap {
         compatible = "zmk,keymap";
 
-        Base {
+        text {
             bindings = <
 &trans  &kp Q  &kp W  &kp F   &kp P      &kp B             &kp J            &kp L      &kp U      &kp Y    &kp GRAVE  &trans
 &trans  &kp A  &kp R  &kp S   &kp T      &kp G             &kp M            &kp N      &kp E      &kp I    &kp O      &trans
 &trans  &kp Z  &kp X  &kp C   &kp D      &kp V             &kp K            &kp H      &kp COMMA  &kp DOT  &kp FSLH   &trans
-                      &trans  &lt 2 TAB  &mt LSHIFT SPACE  &lt 1 BACKSPACE  &kp RCTRL  &trans
+                      &trans  &kp LCTRL  &mt LSHIFT SPACE  &lt 1 BACKSPACE  &lt 2 TAB  &trans
             >;
         };
 
-        Sym {
+        num_sym {
             bindings = <
 &trans  &kp LEFT_GUI  &kp N5  &kp N6  &kp N7     &trans           &trans           &kp PLUS    &kp MINUS         &kp EQUAL          &trans         &trans
 &trans  &kp N1        &kp N2  &kp N3  &kp N4     &trans           &trans           &kp ENTER   &kp TAB           &kp APOS           &kp SEMI       &trans
 &trans  &trans        &kp N8  &kp N9  &kp N0     &trans           &trans           &kp ESCAPE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &trans
-                              &trans  &lt 2 TAB  &mt LSHFT SPACE  &lt 1 BACKSPACE  &kp RCTRL   &trans
+                              &trans  &kp LCTRL  &mt LSHFT SPACE  &lt 1 BACKSPACE  &lt 2 TAB   &trans
             >;
         };
 
-        Mouse_Nav {
+        nav_mouse {
             bindings = <
 &trans  &bootloader   &kp PG_UP      &kp PRINTSCREEN  &kp END    &sys_reset      &trans           &kp PG_UP       &kp PSCRN       &kp PAGE_DOWN   &kp SLCK         &trans
 &trans  &kp LEFT      &kp UP         &kp DOWN         &kp RIGHT  &kp LC(TAB)     &kp LS(LC(TAB))  &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
