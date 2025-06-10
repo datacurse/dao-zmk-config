@@ -27,32 +27,32 @@
 
         b {
             bindings = <&kp B>;
-            key-positions = <4 22>;
+            key-positions = <4 15>;
         };
 
         g {
             bindings = <&kp G>;
-            key-positions = <16 22>;
+            key-positions = <16 15>;
         };
 
         v {
             bindings = <&kp V>;
-            key-positions = <28 22>;
+            key-positions = <28 15>;
         };
 
         j {
             bindings = <&kp J>;
-            key-positions = <7 13>;
+            key-positions = <7 20>;
         };
 
         m {
             bindings = <&kp M>;
-            key-positions = <19 13>;
+            key-positions = <19 20>;
         };
 
         k {
             bindings = <&kp K>;
-            key-positions = <31 13>;
+            key-positions = <31 20>;
         };
     };
 
