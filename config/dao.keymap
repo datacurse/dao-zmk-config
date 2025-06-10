@@ -29,6 +29,31 @@
             bindings = <&kp B>;
             key-positions = <15 4>;
         };
+
+        g {
+            bindings = <&kp G>;
+            key-positions = <15 16>;
+        };
+
+        v {
+            bindings = <&kp V>;
+            key-positions = <15 28>;
+        };
+
+        j {
+            bindings = <&kp J>;
+            key-positions = <20 7>;
+        };
+
+        m {
+            bindings = <&kp M>;
+            key-positions = <20 19>;
+        };
+
+        k {
+            bindings = <&kp K>;
+            key-positions = <20 31>;
+        };
     };
 
     keymap {
