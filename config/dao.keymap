@@ -22,7 +22,14 @@
 };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        b {
+            bindings = <&kp B>;
+            key-positions = <15 4>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
