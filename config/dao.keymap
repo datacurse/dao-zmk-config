@@ -20,7 +20,33 @@
 };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        home {
+            bindings = <&kp HOME>;
+            key-positions = <19 37>;
+            layers = <2>;
+        };
+
+        pg_up {
+            bindings = <&kp PG_UP>;
+            key-positions = <20 37>;
+            layers = <2>;
+        };
+
+        pg_dn {
+            bindings = <&kp PG_DN>;
+            key-positions = <21 37>;
+            layers = <2>;
+        };
+
+        end {
+            bindings = <&kp END>;
+            key-positions = <22 37>;
+            layers = <2>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -45,28 +71,10 @@
 
         nav_mouse {
             bindings = <
-&trans  &trans  &trans  &trans  &trans     &trans            &trans  &kp LC(RS(TAB))  &kp RS(TAB)  &kp PRINTSCREEN    &sys_reset  &trans
-&trans  &trans  &trans  &trans  &trans     &trans            &trans  &kp LEFT         &kp UP       &kp DOWN           &kp RIGHT   &trans
-&trans  &trans  &trans  &trans  &trans     &trans            &trans  &kp C_VOLUME_UP  &kp K_MUTE   &kp C_VOLUME_DOWN  &kp RGUI    &trans
+&trans  &trans  &trans  &trans  &trans     &trans            &trans  &kp LC(RS(TAB))  &kp RS(TAB)  &kp PRINTSCREEN    &sys_reset   &trans
+&trans  &trans  &trans  &trans  &trans     &trans            &trans  &kp LEFT         &kp UP       &kp DOWN           &kp RIGHT    &trans
+&trans  &trans  &trans  &trans  &trans     &trans            &trans  &kp C_VOLUME_UP  &kp K_MUTE   &kp C_VOLUME_DOWN  &bootloader  &trans
                         &trans  &kp LCTRL  &mt LSHIFT SPACE  &trans  &trans           &trans
-            >;
-        };
-
-        shift {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans     &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp HOME  &kp PG_UP  &kp PG_DN  &kp END  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans     &trans   &trans
-                        &trans  &trans  &trans  &trans  &trans    &trans
-            >;
-        };
-
-        layer_4 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
