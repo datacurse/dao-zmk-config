@@ -26,31 +26,44 @@
 
         home {
             bindings = <&kp HOME>;
-            key-positions = <19 37>;
+            key-positions = <37 16>;
             layers = <2>;
         };
 
         pg_up {
             bindings = <&kp PG_UP>;
-            key-positions = <20 37>;
+            key-positions = <37 15>;
             layers = <2>;
         };
 
         pg_dn {
             bindings = <&kp PG_DN>;
-            key-positions = <21 37>;
+            key-positions = <37 14>;
             layers = <2>;
         };
 
         end {
             bindings = <&kp END>;
-            key-positions = <22 37>;
+            key-positions = <37 13>;
             layers = <2>;
         };
 
         ctrl_v {
             bindings = <&kp LC(V)>;
             key-positions = <37 28>;
+            layers = <0>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <37 16>;
+            layers = <0>;
+        };
+
+        lalt {
+            bindings = <&kp LALT>;
+            key-positions = <15 37>;
+            layers = <0>;
         };
     };
 
