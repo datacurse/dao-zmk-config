@@ -71,10 +71,10 @@
 
         nav_mouse {
             bindings = <
-&trans  &trans  &trans  &trans  &trans     &trans            &trans  &kp LC(RS(TAB))  &kp RS(TAB)  &kp PRINTSCREEN    &sys_reset   &trans
-&trans  &trans  &trans  &trans  &trans     &trans            &trans  &kp LEFT         &kp UP       &kp DOWN           &kp RIGHT    &trans
-&trans  &trans  &trans  &trans  &trans     &trans            &trans  &kp C_VOLUME_UP  &kp K_MUTE   &kp C_VOLUME_DOWN  &bootloader  &trans
-                        &trans  &kp LCTRL  &mt LSHIFT SPACE  &trans  &trans           &trans
+&trans  &trans    &trans  &trans         &trans         &trans            &trans  &kp LC(RS(TAB))  &kp RS(TAB)  &kp PRINTSCREEN    &sys_reset   &trans
+&trans  &kp LGUI  &trans  &kp LALT       &kp TAB        &trans            &trans  &kp LEFT         &kp UP       &kp DOWN           &kp RIGHT    &trans
+&trans  &trans    &trans  &kp LC(LS(C))  &kp LC(LS(V))  &trans            &trans  &kp C_VOLUME_UP  &kp K_MUTE   &kp C_VOLUME_DOWN  &bootloader  &trans
+                          &trans         &kp LCTRL      &mt LSHIFT SPACE  &trans  &trans           &trans
             >;
         };
     };
