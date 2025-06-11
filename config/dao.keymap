@@ -45,10 +45,10 @@
 
         nav_mouse {
             bindings = <
-&trans  &kp LGUI  &kp PSCRN  &kp LC(LS(TAB))  &kp RC(TAB)  &trans  &trans  &kp C_VOLUME_DOWN  &kp K_MUTE  &kp C_VOLUME_UP  &sys_reset  &trans
-&trans  &kp LEFT  &kp UP     &kp DOWN         &kp RIGHT    &trans  &trans  &kp LEFT           &kp UP      &kp DOWN         &kp RIGHT   &trans
-&trans  &kp HOME  &kp PG_UP  &kp PAGE_DOWN    &kp END      &trans  &trans  &kp HOME           &kp PG_UP   &kp PG_DN        &kp END     &trans
-                             &trans           &trans       &trans  &trans  &trans             &trans
+&trans  &trans  &trans  &trans  &trans     &trans            &trans  &kp LC(RS(TAB))  &kp RS(TAB)  &kp PRINTSCREEN    &sys_reset  &trans
+&trans  &trans  &trans  &trans  &trans     &trans            &trans  &kp LEFT         &kp UP       &kp DOWN           &kp RIGHT   &trans
+&trans  &trans  &trans  &trans  &trans     &trans            &trans  &kp C_VOLUME_UP  &kp K_MUTE   &kp C_VOLUME_DOWN  &kp RGUI    &trans
+                        &trans  &kp LCTRL  &mt LSHIFT SPACE  &trans  &trans           &trans
             >;
         };
 
@@ -58,6 +58,15 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp HOME  &kp PG_UP  &kp PG_DN  &kp END  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans     &trans   &trans
                         &trans  &trans  &trans  &trans  &trans    &trans
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
