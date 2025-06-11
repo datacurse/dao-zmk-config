@@ -54,16 +54,10 @@
             layers = <0>;
         };
 
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <37 16>;
-            layers = <0>;
-        };
-
-        lalt {
-            bindings = <&kp LALT>;
-            key-positions = <15 37>;
-            layers = <0>;
+        del {
+            bindings = <&kp DEL>;
+            key-positions = <20 38>;
+            layers = <1>;
         };
     };
 
@@ -90,10 +84,10 @@
 
         nav_mouse {
             bindings = <
-&trans  &kp LGUI        &kp PRINTSCREEN  &kp LS(LC(TAB))  &kp LC(TAB)      &trans     &trans     &kp C_VOLUME_UP  &kp K_MUTE  &kp C_VOLUME_DOWN  &sys_reset  &trans
-&trans  &kp LEFT        &kp UP           &kp DOWN         &kp RIGHT        &trans     &trans     &trans           &trans      &trans             &trans      &trans
-&trans  &mmv MOVE_LEFT  &mmv MOVE_UP     &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &trans     &trans     &trans           &trans      &trans             &trans      &trans
-                                         &trans           &mkp RCLK        &mkp LCLK  &mkp LCLK  &mkp RCLK        &trans
+&trans  &trans          &kp PRINTSCREEN  &kp LS(LC(TAB))  &kp LC(TAB)      &trans     &trans  &kp C_VOLUME_UP  &kp K_MUTE  &kp C_VOLUME_DOWN  &sys_reset  &trans
+&trans  &kp LEFT        &kp UP           &kp DOWN         &kp RIGHT        &trans     &trans  &kp TAB          &kp RALT    &kp RGUI           &trans      &trans
+&trans  &mmv MOVE_LEFT  &mmv MOVE_UP     &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &trans     &trans  &trans           &trans      &trans             &trans      &trans
+                                         &trans           &mkp RCLK        &mkp LCLK  &trans  &trans           &trans
             >;
         };
     };
