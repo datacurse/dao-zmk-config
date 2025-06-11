@@ -47,6 +47,11 @@
             key-positions = <22 37>;
             layers = <2>;
         };
+
+        ctrl_v {
+            bindings = <&kp LC(V)>;
+            key-positions = <37 28>;
+        };
     };
 
     keymap {
@@ -54,28 +59,28 @@
 
         text {
             bindings = <
-&trans  &kp Q  &kp W  &kp F   &kp P        &trans       &trans                &kp L      &kp U      &kp Y    &kp GRAVE  &trans
-&trans  &kp A  &kp R  &kp S   &kp T        &trans       &trans                &kp N      &kp E      &kp I    &kp O      &trans
-&trans  &kp Z  &kp X  &kp C   &kp D        &trans       &trans                &kp H      &kp COMMA  &kp DOT  &kp FSLH   &trans
-                      &trans  &lt 2 ENTER  &lt 1 SPACE  &mt RSHIFT BACKSPACE  &kp RCTRL  &trans
+&trans  &kp Q  &kp W  &kp F   &kp P      &trans           &trans           &kp L        &kp U      &kp Y    &kp GRAVE  &trans
+&trans  &kp A  &kp R  &kp S   &kp T      &trans           &trans           &kp N        &kp E      &kp I    &kp O      &trans
+&trans  &kp Z  &kp X  &kp C   &kp D      &trans           &trans           &kp H        &kp COMMA  &kp DOT  &kp FSLH   &trans
+                      &trans  &kp LCTRL  &mt LSHFT SPACE  &lt 1 BACKSPACE  &lt 2 ENTER  &trans
             >;
         };
 
         num_sym {
             bindings = <
-&trans  &kp N7        &kp N8  &kp N9  &kp B        &trans       &trans                &kp J      &kp MINUS         &kp EQUAL          &kp N0         &trans
-&trans  &kp N4        &kp N5  &kp N6  &kp G        &trans       &trans                &kp M      &kp ESC           &kp APOS           &kp SEMI       &trans
-&trans  &kp NUMBER_1  &kp N2  &kp N3  &kp V        &trans       &trans                &kp K      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &trans
-                              &trans  &lt 2 ENTER  &lt 1 SPACE  &mt RSHIFT BACKSPACE  &kp RCTRL  &trans
+&trans  &kp N7        &kp N8  &kp N9  &kp B      &trans            &trans           &kp J        &kp MINUS         &kp EQUAL          &kp N0         &trans
+&trans  &kp N4        &kp N5  &kp N6  &kp G      &trans            &trans           &kp M        &kp ESC           &kp APOS           &kp SEMI       &trans
+&trans  &kp NUMBER_1  &kp N2  &kp N3  &kp V      &trans            &trans           &kp K        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &trans
+                              &trans  &kp LCTRL  &mt LSHIFT SPACE  &lt 1 BACKSPACE  &lt 2 ENTER  &trans
             >;
         };
 
         nav_mouse {
             bindings = <
-&trans  &kp LGUI   &kp PRINTSCREEN  &kp LS(LC(TAB))  &kp LS(TAB)    &trans       &trans     &kp C_VOLUME_UP  &kp K_MUTE    &kp C_VOLUME_DOWN  &sys_reset       &trans
-&trans  &kp LC(A)  &kp LC(R)        &kp LALT         &kp TAB        &trans       &trans     &kp LEFT         &kp UP        &kp DOWN           &kp RIGHT        &trans
-&trans  &kp LC(Z)  &kp LC(X)        &kp LC(LS(C))    &kp LC(LS(V))  &trans       &trans     &mmv MOVE_LEFT   &mmv MOVE_UP  &mmv MOVE_DOWN     &mmv MOVE_RIGHT  &trans
-                                    &trans           &lt 2 ENTER    &lt 1 SPACE  &mkp LCLK  &mkp RCLK        &trans
+&trans  &kp LGUI        &kp PRINTSCREEN  &kp LS(LC(TAB))  &kp LC(TAB)      &trans     &trans     &kp C_VOLUME_UP  &kp K_MUTE  &kp C_VOLUME_DOWN  &sys_reset  &trans
+&trans  &kp LEFT        &kp UP           &kp DOWN         &kp RIGHT        &trans     &trans     &trans           &trans      &trans             &trans      &trans
+&trans  &mmv MOVE_LEFT  &mmv MOVE_UP     &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &trans     &trans     &trans           &trans      &trans             &trans      &trans
+                                         &trans           &mkp RCLK        &mkp LCLK  &mkp LCLK  &mkp RCLK        &trans
             >;
         };
     };
