@@ -8,11 +8,6 @@
 #define RSE 2
 #define ADJ 3
 
-&ht {
-    flavor = "balanced";
-    require-prior-idle-ms = <100>;
-};
-
 &mt { quick_tap_ms = <200>; };
 
 / {
