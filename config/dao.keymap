@@ -54,6 +54,26 @@
             key-positions = <37 28>;
             layers = <0>;
         };
+
+        printscreen {
+            bindings = <&kp PRINTSCREEN>;
+            key-positions = <37 2>;
+        };
+
+        tab {
+            bindings = <&kp LC(TAB)>;
+            key-positions = <37 4>;
+        };
+
+        tab_prev {
+            bindings = <&kp LS(LC(TAB))>;
+            key-positions = <3 37>;
+        };
+
+        ctrl+c {
+            bindings = <&kp LC(C)>;
+            key-positions = <37 27>;
+        };
     };
 
     keymap {
@@ -83,15 +103,6 @@
 &trans  &kp LEFT  &kp UP  &kp DOWN  &kp RIGHT  &trans     &trans  &mmv MOVE_LEFT     &mmv MOVE_UP  &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &trans
 &trans  &trans    &trans  &trans    &trans     &trans     &trans  &trans             &trans        &trans           &sys_reset       &trans
                           &trans    &mkp RCLK  &mkp LCLK  &trans  &trans             &trans
-            >;
-        };
-
-        layer_3 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
