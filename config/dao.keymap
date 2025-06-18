@@ -101,19 +101,19 @@
 
         num_sym {
             bindings = <
-&trans  &kp N7        &kp N8  &kp N9  &kp B      &trans            &trans           &kp J        &kp MINUS         &kp EQUAL          &kp N0         &trans
-&trans  &kp N4        &kp N5  &kp N6  &kp G      &trans            &trans           &kp M        &kp ESC           &kp APOS           &kp SEMI       &trans
-&trans  &kp NUMBER_1  &kp N2  &kp N3  &kp V      &trans            &trans           &kp K        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &trans
-                              &trans  &kp LCTRL  &mt LSHIFT SPACE  &lt 1 BACKSPACE  &lt 2 ENTER  &trans
+&trans  &trans  &kp N7  &kp N8  &kp N9     &trans            &trans           &trans       &kp MINUS         &kp EQUAL          &trans         &trans
+&trans  &kp N0  &kp N4  &kp N5  &kp N6     &trans            &trans           &kp DEL      &kp ESC           &kp APOS           &kp SEMI       &trans
+&trans  &trans  &kp N1  &kp N2  &kp N3     &trans            &trans           &trans       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &trans
+                        &trans  &kp LCTRL  &mt LSHIFT SPACE  &lt 1 BACKSPACE  &lt 2 ENTER  &trans
             >;
         };
 
         nav_mouse {
             bindings = <
-&trans  &trans          &kp PRINTSCREEN  &kp LS(LC(TAB))  &kp LC(TAB)      &trans     &trans  &kp C_VOLUME_UP  &kp K_MUTE  &kp C_VOLUME_DOWN  &bt BT_CLR_ALL  &trans
-&trans  &kp LEFT        &kp UP           &kp DOWN         &kp RIGHT        &trans     &trans  &kp TAB          &kp RALT    &kp RGUI           &trans          &trans
-&trans  &mmv MOVE_LEFT  &mmv MOVE_UP     &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &trans     &trans  &trans           &trans      &trans             &sys_reset      &trans
-                                         &trans           &mkp RCLK        &mkp LCLK  &trans  &trans           &trans
+&trans  &trans          &kp PRINTSCREEN  &kp LS(LC(TAB))  &kp LC(TAB)      &trans     &trans  &kp C_VOLUME_DOWN  &kp K_MUTE  &kp C_VOLUME_UP  &bt BT_CLR_ALL  &trans
+&trans  &kp LEFT        &kp UP           &kp DOWN         &kp RIGHT        &trans     &trans  &kp TAB            &kp RALT    &kp RGUI         &trans          &trans
+&trans  &mmv MOVE_LEFT  &mmv MOVE_UP     &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &trans     &trans  &trans             &trans      &trans           &sys_reset      &trans
+                                         &trans           &mkp RCLK        &mkp LCLK  &trans  &trans             &trans
             >;
         };
     };
