@@ -55,6 +55,36 @@
             key-positions = <37 28>;
             layers = <0>;
         };
+
+        b {
+            bindings = <&kp B>;
+            key-positions = <4 39>;
+        };
+
+        g {
+            bindings = <&kp G>;
+            key-positions = <16 39>;
+        };
+
+        v {
+            bindings = <&kp V>;
+            key-positions = <28 39>;
+        };
+
+        j {
+            bindings = <&kp J>;
+            key-positions = <7 38>;
+        };
+
+        m {
+            bindings = <&kp M>;
+            key-positions = <19 38>;
+        };
+
+        k {
+            bindings = <&kp K>;
+            key-positions = <31 38>;
+        };
     };
 
     keymap {
