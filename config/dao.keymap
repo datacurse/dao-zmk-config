@@ -27,25 +27,25 @@
         compatible = "zmk,combos";
 
         home {
-            bindings = <&kp HOME>;
+            bindings = <&kp END>;
             key-positions = <37 16>;
             layers = <2>;
         };
 
         pg_up {
-            bindings = <&kp PG_UP>;
+            bindings = <&kp PG_DN>;
             key-positions = <37 15>;
             layers = <2>;
         };
 
         pg_dn {
-            bindings = <&kp PG_DN>;
+            bindings = <&kp PG_UP>;
             key-positions = <37 14>;
             layers = <2>;
         };
 
         end {
-            bindings = <&kp END>;
+            bindings = <&kp HOME>;
             key-positions = <37 13>;
             layers = <2>;
         };
@@ -54,12 +54,6 @@
             bindings = <&kp LC(V)>;
             key-positions = <37 28>;
             layers = <0>;
-        };
-
-        del {
-            bindings = <&kp DEL>;
-            key-positions = <20 38>;
-            layers = <1>;
         };
     };
 
