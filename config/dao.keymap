@@ -54,36 +54,6 @@
             key-positions = <37 28>;
             layers = <0>;
         };
-
-        b {
-            bindings = <&kp B>;
-            key-positions = <4 39>;
-        };
-
-        g {
-            bindings = <&kp G>;
-            key-positions = <16 39>;
-        };
-
-        v {
-            bindings = <&kp V>;
-            key-positions = <28 39>;
-        };
-
-        j {
-            bindings = <&kp J>;
-            key-positions = <7 38>;
-        };
-
-        m {
-            bindings = <&kp M>;
-            key-positions = <19 38>;
-        };
-
-        k {
-            bindings = <&kp K>;
-            key-positions = <31 38>;
-        };
     };
 
     keymap {
@@ -91,9 +61,9 @@
 
         text {
             bindings = <
-&trans  &kp Q  &kp W  &kp F   &kp P      &trans           &trans           &kp L        &kp U      &kp Y    &kp GRAVE  &trans
-&trans  &kp A  &kp R  &kp S   &kp T      &trans           &trans           &kp N        &kp E      &kp I    &kp O      &trans
-&trans  &kp Z  &kp X  &kp C   &kp D      &trans           &trans           &kp H        &kp COMMA  &kp DOT  &kp FSLH   &trans
+&trans  &kp Q  &kp W  &kp F   &kp P      &kp B            &kp J            &kp L        &kp U      &kp Y    &kp GRAVE  &trans
+&trans  &kp A  &kp R  &kp S   &kp T      &kp G            &kp M            &kp N        &kp E      &kp I    &kp O      &trans
+&trans  &kp Z  &kp X  &kp C   &kp D      &kp V            &kp K            &kp H        &kp COMMA  &kp DOT  &kp FSLH   &trans
                       &trans  &kp LCTRL  &mt LSHFT SPACE  &lt 1 BACKSPACE  &lt 2 ENTER  &trans
             >;
         };
