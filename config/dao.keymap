@@ -13,6 +13,9 @@
 
 &lt { quick_tap_ms = <200>; };
 
+&mmv {
+};
+
 / {
     chosen {
         zmk,matrix_transform = &default_transform;
