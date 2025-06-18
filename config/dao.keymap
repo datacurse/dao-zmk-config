@@ -11,8 +11,7 @@
 
 &mt { quick_tap_ms = <200>; };
 
-&lt {
-};
+&lt { quick_tap_ms = <200>; };
 
 / {
     chosen {
