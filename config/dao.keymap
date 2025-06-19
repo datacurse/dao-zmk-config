@@ -93,10 +93,10 @@
 
         num_sym {
             bindings = <
-&trans  &kp N6  &kp N7  &kp N8  &kp N9     &kp N0            &trans           &kp RIGHT_ALT  &kp MINUS         &kp EQUAL          &kp RIGHT_WIN  &trans
-&trans  &kp N1  &kp N2  &kp N3  &kp N4     &kp N5            &trans           &kp TAB        &kp ESCAPE        &kp APOS           &kp SEMI       &trans
-&trans  &trans  &trans  &trans  &trans     &trans            &trans           &kp DELETE     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &trans
-                        &trans  &kp LCTRL  &mt LSHIFT SPACE  &lt 1 BACKSPACE  &lt 2 ENTER    &trans
+&trans  &kp N6  &kp N7  &kp N8  &kp N9     &kp N0            &trans           &kp RA(TAB)  &kp MINUS         &kp EQUAL          &kp RIGHT_WIN  &trans
+&trans  &kp N1  &kp N2  &kp N3  &kp N4     &kp N5            &trans           &kp TAB      &kp ESCAPE        &kp APOS           &kp SEMI       &trans
+&trans  &trans  &trans  &trans  &trans     &trans            &trans           &kp DELETE   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &trans
+                        &trans  &kp LCTRL  &mt LSHIFT SPACE  &lt 1 BACKSPACE  &lt 2 ENTER  &trans
             >;
         };
 
