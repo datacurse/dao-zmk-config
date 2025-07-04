@@ -29,17 +29,17 @@
 
         printscreen {
             bindings = <&kp PRINTSCREEN>;
-            key-positions = <37 2>;
+            key-positions = <37 4>;
         };
 
         tab {
             bindings = <&kp LC(TAB)>;
-            key-positions = <37 4>;
+            key-positions = <37 16>;
         };
 
         tab_prev {
             bindings = <&kp LS(LC(TAB))>;
-            key-positions = <3 37>;
+            key-positions = <37 15>;
         };
     };
 
