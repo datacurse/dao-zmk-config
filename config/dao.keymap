@@ -76,10 +76,10 @@
 
         nav_mouse {
             bindings = <
-&trans  &kp PG_UP  &kp PG_DN  &kp HOME  &kp END    &trans  &trans  &trans           &trans             &trans      &trans  &trans
-&trans  &kp UP     &kp DOWN   &kp LEFT  &kp RIGHT  &trans  &trans  &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &kp C_MUTE  &trans  &trans
-&trans  &trans     &trans     &trans    &trans     &trans  &trans  &trans           &trans             &trans      &trans  &trans
-                              &trans    &trans     &trans  &trans  &trans           &bt BT_CLR_ALL
+&trans  &kp HOME  &kp PG_DN  &kp PAGE_DOWN  &kp END    &trans  &trans  &trans           &trans             &trans      &trans  &trans
+&trans  &kp LEFT  &kp UP     &kp DOWN       &kp RIGHT  &trans  &trans  &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &kp C_MUTE  &trans  &trans
+&trans  &trans    &trans     &trans         &trans     &trans  &trans  &trans           &trans             &trans      &trans  &trans
+                             &trans         &trans     &trans  &trans  &trans           &bt BT_CLR_ALL
             >;
         };
     };
