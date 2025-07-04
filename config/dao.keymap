@@ -27,12 +27,6 @@
     combos {
         compatible = "zmk,combos";
 
-        ctrl_v {
-            bindings = <&kp LC(V)>;
-            key-positions = <37 28>;
-            layers = <0>;
-        };
-
         printscreen {
             bindings = <&kp PRINTSCREEN>;
             key-positions = <37 2>;
@@ -46,11 +40,6 @@
         tab_prev {
             bindings = <&kp LS(LC(TAB))>;
             key-positions = <3 37>;
-        };
-
-        ctrl+c {
-            bindings = <&kp LC(C)>;
-            key-positions = <37 27>;
         };
     };
 
