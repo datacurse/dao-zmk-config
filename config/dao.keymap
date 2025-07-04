@@ -84,19 +84,19 @@
 
         text {
             bindings = <
-&trans  &kp Q  &kp W  &kp F   &kp P      &kp B            &kp J            &kp L        &kp U      &kp Y    &kp GRAVE  &trans
-&trans  &kp A  &kp R  &kp S   &kp T      &kp G            &kp M            &kp N        &kp E      &kp I    &kp O      &trans
-&trans  &kp Z  &kp X  &kp C   &kp D      &kp V            &kp K            &kp H        &kp COMMA  &kp DOT  &kp FSLH   &trans
-                      &trans  &kp LCTRL  &mt LSHFT SPACE  &lt 1 BACKSPACE  &lt 2 ENTER  &trans
+&trans  &kp Q  &kp W  &kp F     &kp P      &kp B            &kp J            &kp L        &kp U      &kp Y    &kp GRAVE  &trans
+&trans  &kp A  &kp R  &kp S     &kp T      &kp G            &kp M            &kp N        &kp E      &kp I    &kp O      &trans
+&trans  &kp Z  &kp X  &kp C     &kp D      &kp V            &kp K            &kp H        &kp COMMA  &kp DOT  &kp FSLH   &trans
+                      &kp LALT  &kp LCTRL  &mt LSHFT SPACE  &lt 1 BACKSPACE  &lt 2 ENTER  &trans
             >;
         };
 
         num_sym {
             bindings = <
-&trans  &kp N6  &kp N7  &kp N8  &kp N9     &kp N0            &trans           &kp PLUS     &kp MINUS         &kp EQUAL          &kp RIGHT_WIN  &trans
-&trans  &kp N1  &kp N2  &kp N3  &kp N4     &kp N5            &kp RA(TAB)      &kp TAB      &kp ESCAPE        &kp APOS           &kp SEMI       &trans
-&trans  &trans  &trans  &trans  &trans     &trans            &trans           &kp DELETE   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &trans
-                        &trans  &kp LCTRL  &mt LSHIFT SPACE  &lt 1 BACKSPACE  &lt 2 ENTER  &trans
+&trans  &kp N6  &kp N7  &kp N8        &kp N9     &kp N0            &kp LWIN         &kp PLUS     &kp MINUS         &kp EQUAL          &kp RALT       &trans
+&trans  &kp N1  &kp N2  &kp N3        &kp N4     &kp N5            &kp RA(TAB)      &kp TAB      &kp ESCAPE        &kp APOS           &kp SEMI       &trans
+&trans  &trans  &trans  &trans        &trans     &trans            &trans           &kp DELETE   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &trans
+                        &kp LEFT_ALT  &kp LCTRL  &mt LSHIFT SPACE  &lt 1 BACKSPACE  &lt 2 ENTER  &trans
             >;
         };
 
