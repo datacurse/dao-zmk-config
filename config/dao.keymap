@@ -41,6 +41,16 @@
             bindings = <&kp LS(LC(TAB))>;
             key-positions = <37 15>;
         };
+
+        ctrl_v {
+            bindings = <&kp LC(V)>;
+            key-positions = <37 28>;
+        };
+
+        ctrl_c {
+            bindings = <&kp LC(C)>;
+            key-positions = <37 27>;
+        };
     };
 
     keymap {
