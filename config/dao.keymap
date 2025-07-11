@@ -51,7 +51,7 @@
 &trans  &kp Q  &kp W  &kp F     &kp P      &kp B            &kp J            &kp L        &kp U      &kp Y    &kp GRAVE  &trans
 &trans  &kp A  &kp R  &kp S     &kp T      &kp G            &kp M            &kp N        &kp E      &kp I    &kp O      &trans
 &trans  &kp Z  &kp X  &kp C     &kp D      &kp V            &kp K            &kp H        &kp COMMA  &kp DOT  &kp FSLH   &trans
-                      &kp LALT  &kp LCTRL  &mt LSHFT SPACE  &lt 1 BACKSPACE  &lt 2 ENTER  &trans
+                      &kp LALT  &kp LCTRL  &mt LSHFT SPACE  &lt 1 BACKSPACE  &lt 2 ENTER  &kp LWIN
             >;
         };
 
@@ -66,9 +66,9 @@
 
         nav_mouse {
             bindings = <
-&trans  &kp HOME  &kp PG_DN  &kp PAGE_DOWN  &kp END    &trans  &trans  &trans           &trans             &trans      &trans  &trans
-&trans  &kp LEFT  &kp UP     &kp DOWN       &kp RIGHT  &trans  &trans  &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &kp C_MUTE  &trans  &trans
-&trans  &trans    &trans     &trans         &trans     &trans  &trans  &trans           &trans             &trans      &trans  &trans
+&trans  &kp HOME  &kp PG_DN  &kp PAGE_DOWN  &kp END    &trans  &trans  &trans           &trans             &trans      &trans    &trans
+&trans  &kp LEFT  &kp UP     &kp DOWN       &kp RIGHT  &trans  &trans  &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &kp C_MUTE  &kp LWIN  &trans
+&trans  &trans    &trans     &trans         &trans     &trans  &trans  &trans           &trans             &trans      &trans    &trans
                              &trans         &trans     &trans  &trans  &trans           &bt BT_CLR_ALL
             >;
         };
