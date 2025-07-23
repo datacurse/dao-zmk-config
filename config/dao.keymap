@@ -32,17 +32,17 @@
             key-positions = <37 4>;
         };
 
-        tab {
+        next_tab {
             bindings = <&kp LC(TAB)>;
             key-positions = <37 16>;
         };
 
-        tab_prev {
+        prev_tab {
             bindings = <&kp LS(LC(TAB))>;
             key-positions = <37 15>;
         };
 
-        previous_page {
+        prev_page {
             bindings = <&kp LA(LEFT)>;
             key-positions = <37 13>;
         };
