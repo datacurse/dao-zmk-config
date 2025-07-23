@@ -41,6 +41,16 @@
             bindings = <&kp LS(LC(TAB))>;
             key-positions = <37 15>;
         };
+
+        previous_page {
+            bindings = <&kp LA(LEFT)>;
+            key-positions = <37 13>;
+        };
+
+        next_page {
+            bindings = <&kp LA(RIGHT)>;
+            key-positions = <14 37>;
+        };
     };
 
     keymap {
