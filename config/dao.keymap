@@ -58,12 +58,12 @@
         };
 
         prev_window {
-            bindings = <&kp LC(LG(LEFT))>;
+            bindings = <&kp LG(LC(LEFT))>;
             key-positions = <37 13>;
         };
 
         next_window {
-            bindings = <&kp LC(LG(RIGHT))>;
+            bindings = <&kp LG(LC(RIGHT))>;
             key-positions = <14 37>;
         };
 
