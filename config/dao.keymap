@@ -84,7 +84,7 @@
 &trans  &kp HOME  &kp PG_DN  &kp PAGE_DOWN  &kp END    &trans  &trans  &trans           &trans             &trans      &trans    &trans
 &trans  &kp LEFT  &kp UP     &kp DOWN       &kp RIGHT  &trans  &trans  &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &kp C_MUTE  &kp RGUI  &trans
 &trans  &trans    &trans     &trans         &trans     &trans  &trans  &trans           &trans             &trans      &trans    &trans
-                             &trans         &trans     &trans  &trans  &trans           &bt BT_CLR_ALL
+                             &trans         &kp LCTRL  &trans  &trans  &trans           &bt BT_CLR_ALL
             >;
         };
     };
