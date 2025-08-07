@@ -29,7 +29,7 @@
 
         printscreen {
             bindings = <&kp PRINTSCREEN>;
-            key-positions = <37 4>;
+            key-positions = <37 26>;
         };
 
         next_tab {
@@ -44,17 +44,32 @@
 
         prev_page {
             bindings = <&kp LA(LEFT)>;
-            key-positions = <37 13>;
+            key-positions = <37 3>;
         };
 
         next_page {
             bindings = <&kp LA(RIGHT)>;
-            key-positions = <14 37>;
+            key-positions = <37 4>;
         };
 
         delete {
             bindings = <&kp DEL>;
             key-positions = <37 28>;
+        };
+
+        prev_window {
+            bindings = <&kp LC(LG(LEFT))>;
+            key-positions = <37 13>;
+        };
+
+        next_window {
+            bindings = <&kp LC(LG(RIGHT))>;
+            key-positions = <14 37>;
+        };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <37 27>;
         };
     };
 
